@@ -1,0 +1,5 @@
+single_step_io_redirection: prepare_input
+  cat < input.txt > output.txt
+
+prepare_input:
+  cat src/main.c > input.txt
