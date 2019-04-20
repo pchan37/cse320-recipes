@@ -1,0 +1,6 @@
+multi_step_io_redirection: prepare_input
+  cat < input.txt | grep "main" > output.txt
+
+prepare_input:
+  cat src/main.c > input.txt
+  sleep 1
