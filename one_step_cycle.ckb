@@ -1,0 +1,5 @@
+one_step_cycle: cycling
+  echo hello
+
+cycling: one_step_cycle
+  echo bye
