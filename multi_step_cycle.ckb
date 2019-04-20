@@ -1,0 +1,11 @@
+multi_step_cycle: cycling_a
+  echo hi
+
+cycling_a: cycling_b
+  echo bye
+
+cycling_b: cycling_c
+  echo die
+
+cycling_c: multi_step_cycle
+  echo reap
